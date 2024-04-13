@@ -20,7 +20,7 @@ APP_VERSION = $(MAJOR).$(MINOR)
 GIT_MESSAGE = "auto commit"
 
 # go source files, ignore vendor directory
-RC = $(shell find . -type f -name '*.go' -not -path "./vendor/*")
+SRC = $(shell find . -type f -name '*.go' -not -path "./vendor/*")
 
 .PHONY: all apk rebuild help prepare clean distclean \
         fmt simplify vet tidy vendor commit
